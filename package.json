@@ -1,11 +1,12 @@
 {
   "name": "@gota/service",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
+	"prepublish": "gtc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,7 +18,6 @@
   },
   "dependencies": {
     "reflect-metadata": "^0.1.12",
-	"@gota/core": "latest",
-    "@gota/helper":"latest"
+	"@gota/core": "latest"
   }
 }

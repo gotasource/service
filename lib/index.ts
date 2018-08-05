@@ -1,7 +1,7 @@
 
 //https://rbuckton.github.io/reflect-metadata/#syntax
 import 'reflect-metadata'
-import Helper from "@gota/helper";
+import {Helper} from "@gota/core";
 
 const DESIGN_META_DATA = {
     APP : 'design:meta:data:key:app',
