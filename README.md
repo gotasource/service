@@ -46,7 +46,7 @@ Example:
 export class UserService{
 	...
     @ServiceMapping({path: '/users'})
-    async readAll():Promise<User[]>{
+    async readAll():Promise<Array<User>>{
         ...
     }
     
@@ -62,8 +62,8 @@ Mapping with url parameter.
 Start of PathParameter is ':' character.
 ```javascript
 ...
-    @ServiceMapping({path: '/users/:userId', requestMethod: 'POST'})
-    async get(@PathParameter userId: string):Promise<User[]>{
+    @ServiceMapping({path: '/users/:userId', requestMethod: 'GET'})
+    async get(@PathParameter userId: string):Promise<User>{
         ...        
     }
 ```
@@ -87,7 +87,7 @@ Example:
 ```javascript
 ...
     @ServiceMapping({path: '/users', requestMethod: 'POST'})
-    async create(@Body body: object):Promise<User[]>{
+    async create(@Body body: object):Promise<String>{
         let user: User = new User(body.firstName, body.lastName, body.email, body.phone);
         ...        
     }    
