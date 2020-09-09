@@ -1,12 +1,12 @@
 {
   "name": "@gota/service",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-	"prepublish": "gtc",
+    "prepublish": "gtc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,7 +17,8 @@
     "@types/node": "^9.4.6"
   },
   "dependencies": {
-    "reflect-metadata": "^0.1.12",
-	"@gota/core": "latest"
+    "@gota/core": "latest",
+    "@gota/dao": "latest",
+    "reflect-metadata": "^0.1.12"
   }
 }
